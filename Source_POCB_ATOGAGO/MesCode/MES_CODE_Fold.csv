@@ -1,0 +1,18 @@
+1,PD08,Fail to init camera library,A0G-B01-4WF,A0G-B01-----4WF---------------------------,Check DPC (LibCLMatrox_x64.dll)
+2,PD09,Fail to connect camera,A0G-B01-4WF,A0G-B01-----4WF---------------------------,Check DPC (Check 3 if IntelliCam is running. Test camera interworking using InteliCam)
+3,PD10,Fail to set exposure time,A0G-B01-4WF,A0G-B01-----4WF---------------------------,
+4,PD11,Fail to set trigger,A0G-B01-4WF,A0G-B01-----4WF---------------------------,Check DPC (Check if Trigger operation using IntelliCam is normal)
+5,PD12,Fail to init library,A0G-B01-4WF,A0G-B01-----4WF---------------------------,Check DPC (LGD_Compensation.dll)
+11,PD13,Unknown model name,A0G-B01-4WF,A0G-B01-----4WF---------------------------,Check DPC (Check if Model Name is same between GPC and DPC)
+12,PD14,The hard capacity is full,A0G-B01-4WF,A0G-B01-----4WF---------------------------,Check DPC (Performs a cleanup function in the Vision PC Error popup message)
+14,PD15,Fail to find result hex file,A0G-B01-4WG,A0G-B01-----4WG---------------------------,Check DPC (Check LGD Algorithm file output path)
+16,PD16,Timeout - Pattern Display,A0G-B01-4WH,A0G-B01-----4WH---------------------------,
+17,PD16,Timeout - Pattern Display,A0G-B01-4WH,A0G-B01-----4WH---------------------------,
+18,PD16,Timeout - Pattern Display,A0G-B01-4WH,A0G-B01-----4WH---------------------------,
+19,PD16,Timeout - Pattern Display,A0G-B01-4WH,A0G-B01-----4WH---------------------------,
+20,PD16,Timeout - Pattern Display,A0G-B01-4WH,A0G-B01-----4WH---------------------------,
+30,PD17,Timeout - Write Pocb result file,A0G-B01-4WJ,A0G-B01-----4WJ---------------------------,Check DPC (Camera PC Log)
+37,PD18,Timeout - TEND,A0G-B01-4WK,A0G-B01-----4WK---------------------------,Check DPC (Camera PC Log)
+38,PD19,Error Brightness,A0G-B01-4WL,A0G-B01-----4WL---------------------------,Check GPC (Pattern output). Check DPC (Expossure Setting Value)
+39,PD20,Error Darkness,A0G-B01-4WM,A0G-B01-----4WM---------------------------,Check GPC (Pattern output). Check DPC (Expossure Setting Value)
+41,PD21,Error Compentation,A0G-B01-4WN,A0G-B01-----4WN---------------------------,Check DPC (Camera PC Log)

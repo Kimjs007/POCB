@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BBE7C4F7-A931-43A4-A960-AFE70B2F5F45}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="POCB_ATO.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="POCB_ATO_Simulator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="POCB_GAGO_Simulator.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="POCB_GAGO.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="POCB_ATO">
+        <MSBuild Projects="POCB_ATO.dproj"/>
+    </Target>
+    <Target Name="POCB_ATO:Clean">
+        <MSBuild Projects="POCB_ATO.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="POCB_ATO:Make">
+        <MSBuild Projects="POCB_ATO.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="POCB_ATO_Simulator">
+        <MSBuild Projects="POCB_ATO_Simulator.dproj"/>
+    </Target>
+    <Target Name="POCB_ATO_Simulator:Clean">
+        <MSBuild Projects="POCB_ATO_Simulator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="POCB_ATO_Simulator:Make">
+        <MSBuild Projects="POCB_ATO_Simulator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="POCB_GAGO_Simulator">
+        <MSBuild Projects="POCB_GAGO_Simulator.dproj"/>
+    </Target>
+    <Target Name="POCB_GAGO_Simulator:Clean">
+        <MSBuild Projects="POCB_GAGO_Simulator.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="POCB_GAGO_Simulator:Make">
+        <MSBuild Projects="POCB_GAGO_Simulator.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="POCB_GAGO">
+        <MSBuild Projects="POCB_GAGO.dproj"/>
+    </Target>
+    <Target Name="POCB_GAGO:Clean">
+        <MSBuild Projects="POCB_GAGO.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="POCB_GAGO:Make">
+        <MSBuild Projects="POCB_GAGO.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="POCB_ATO;POCB_ATO_Simulator;POCB_GAGO_Simulator;POCB_GAGO"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="POCB_ATO:Clean;POCB_ATO_Simulator:Clean;POCB_GAGO_Simulator:Clean;POCB_GAGO:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="POCB_ATO:Make;POCB_ATO_Simulator:Make;POCB_GAGO_Simulator:Make;POCB_GAGO:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
